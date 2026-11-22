@@ -147,7 +147,7 @@ data3 = [
         'title': 'Breathtaking Snowy Mountains',
         'desc': 'The Snowy Mountains are one of Australia’s most spectacular natural destinations, famous for their snow-covered peaks, alpine landscapes, and breathtaking scenery. Located in New South Wales, the region is home to Mount Kosciuszko, the highest mountain in Australia. During winter, visitors can enjoy skiing, snowboarding, and other snow activities, while summer offers beautiful hiking trails, lakes, and scenic views. The Snowy Mountains are a perfect destination for adventure seekers and nature lovers.',
         'pic': 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRonYnUdSSejNYpQ-3MF0eDuJa8neurvk6QtsxY7NrIEA&s=10',
-        'pic2': 'https://images.unsplash.com/photo-1729400860940-e6c122f32439?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
+        'pic2': 'https://plus.unsplash.com/premium_photo-1672947570368-1190dd530542?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D'
     }
 ]
 
