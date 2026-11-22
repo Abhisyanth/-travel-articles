@@ -1,0 +1,34 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/blogs.css' %}">
+
+<div class="blogs-container">
+
+    {% for i in blogs %}
+
+    <div class="blogs-card">
+
+        <img src="{{i.pic}}" alt="{{i.title}}">
+
+        <p class="blogs-number">#{{i.id}}</p>
+
+        <h2 class="blogs-title">{{i.title}}</h2>
+
+        <p class="blogs-description">
+            {{i.desc|truncatewords:5}}...
+        </p>
+
+        <a href="{% url 'read' i.id %}" class="blogs-read-more">
+            Read More
+        </a>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+
+<link rel="stylesheet" href="{% static 'css/canada.css' %}">
+
+<div class="canada-container">
+
+    {% for i in data4 %}
+
+    <div class="canada-card">
+        <img src="{{i.pic}}" alt="{{i.title}}">
+        <p class="canada-number">#{{i.id}}</p>
+
+        <h2 class="canada-title">{{i.title}}</h2>
+
+        <p class="canada-description">
+            {{i.desc|truncatewords:5}}...
+        </p>
+
+        <a href="{% url 'read' i.id %}" class="canada-read-more">
+            Read More
+        </a>
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endblock %}

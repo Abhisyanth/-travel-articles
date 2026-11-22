@@ -1,0 +1,117 @@
+nav {
+    background-color: rgb(168, 135, 250);
+    padding: 15px 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+
+    border-bottom: 1px solid #e5e5e5;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+
+/* Travel Articles Logo */
+
+.travel-logo {
+    width: 300px;
+    height: auto;
+    object-fit: contain;
+}
+
+
+/* Navigation Buttons */
+
+nav a {
+    color: #2d1b4e;
+    text-decoration: none;
+
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+
+    padding: 12px 25px;
+
+    border-radius: 12px;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #f1eaff
+    );
+
+    border: 1px solid rgba(108, 63, 197, 0.3);
+
+    box-shadow: 
+        0 4px 8px rgba(45, 27, 78, 0.15);
+
+    transition: all 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+nav a:hover {
+    background: linear-gradient(
+        135deg,
+        #8b5cf6,
+        #6c3fc5
+    );
+
+    color: white;
+
+    transform: translateY(-4px);
+
+    box-shadow:
+        0 8px 15px rgba(108, 63, 197, 0.35);
+
+    border-color: #6c3fc5;
+}
+
+
+/* Active Button Effect */
+
+nav a:active {
+    transform: translateY(-1px);
+    box-shadow:
+        0 3px 8px rgba(108, 63, 197, 0.25);
+}
+
+
+/* Responsive */
+
+@media screen and (max-width: 1000px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .travel-logo {
+        width: 250px;
+        margin-bottom: 10px;
+    }
+
+}
+
+
+@media screen and (max-width: 600px) {
+
+    nav {
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .travel-logo {
+        width: 200px;
+    }
+
+    nav a {
+        font-size: 14px;
+        padding: 10px 15px;
+    }
+
+}

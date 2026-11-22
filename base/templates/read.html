@@ -1,0 +1,35 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{data.title}}</title>
+    <link rel="stylesheet" href="{% static 'css/read.css' %}">
+</head>
+
+<body>
+
+    <div class="read-container">
+
+        <div class="read-card">
+
+            <img src="{{data.pic2}}" alt="{{data.title}}" class="read-image">
+
+            <div class="read-content">
+
+                <p class="read-number">#{{data.id}}</p>
+
+                <h1>{{data.title}}</h1>
+
+                <p class="read-description">
+                    {{data.desc}}
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
